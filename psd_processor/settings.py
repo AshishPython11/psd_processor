@@ -26,8 +26,16 @@ SECRET_KEY = 'django-insecure-7#hj=nxj*57xk16s7-hglss^^71g=@-*bq)auo8dc9(zszmx=s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '0.0.0.0',
+    'localhost',
+    'stage-isalespilot.idolcodesource.in',
+]
 
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:8000",
+    "https://stage-isalespilot.idolcodesource.in",
+]
 
 # Application definition
 
