@@ -28,6 +28,6 @@ RUN mkdir -p /app/logs && \
 # Copy project files
 COPY . .
 
-EXPOSE 2347
+EXPOSE 8000
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:2347"] 
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"] 
