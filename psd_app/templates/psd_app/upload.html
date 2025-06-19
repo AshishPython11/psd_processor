@@ -1,0 +1,8 @@
+<!-- templates/psd_app/upload.html -->
+{% extends "base.html" %} {% block content %}
+<h1>Upload PSD File</h1>
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %} {{ form.as_p }}
+  <button type="submit">Upload and Process</button>
+</form>
+{% endblock %}
